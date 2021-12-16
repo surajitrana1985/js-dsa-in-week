@@ -4,7 +4,7 @@
   "description": "This is a list of 60 standard DSA questions suggested by Love Babbar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "max-subarray-sum": "nodemon ./arrays/max-subarray-sum.js"
   },
   "repository": {
     "type": "git",
