@@ -12,7 +12,7 @@
  * Example 2: Input: prices = [7, 6, 4, 3, 1], Output: 0
  */
 
-console.log('LeetCode 53. Maximum Subarray')
+console.log('LeetCode 121. Best Time to Buy and Sell Stock')
 
 /**
  * Solution 1: Brute-Force Solution
