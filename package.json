@@ -1,0 +1,28 @@
+{
+  "name": "js-dsa-in-week",
+  "version": "1.0.0",
+  "description": "This is a list of 60 standard DSA questions suggested by Love Babbar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surajitrana1985/js-dsa-in-week.git"
+  },
+  "keywords": [
+    "DSA",
+    "Javascript",
+    "Top",
+    "Questions"
+  ],
+  "author": "surajitrana1985",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surajitrana1985/js-dsa-in-week/issues"
+  },
+  "homepage": "https://github.com/surajitrana1985/js-dsa-in-week#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
