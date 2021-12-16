@@ -19,9 +19,8 @@ console.log("LeetCode 53. Maximum Subarray");
 const input_array = [-5, 4, 6, -3, 4, -1];
 
 /**
- * Brute-Force Solution - Time Complexity - O(N²)
- * @Input: [-5, 4, 6, -3, 4, -1]
- * @Output: 11
+ * Solution 1: Brute-Force Solution
+ * Time Complexity - O(N²)
  */
 
 function maxSubArraySumBruteForce(sequence) {
@@ -39,9 +38,8 @@ function maxSubArraySumBruteForce(sequence) {
 }
 
 /**
- * Kadane's Algorithm to optimize above solution in Time Complexity - O(N)
- * @Input: [-5, 4, 6, -3, 4, -1]
- * @Output: 11
+ * Solution 2: Kadane's Algorithm
+ * Time Complexity - O(N)
  */
 
 function maxSubArraySumKadanesAlgorithm(sequence) {
