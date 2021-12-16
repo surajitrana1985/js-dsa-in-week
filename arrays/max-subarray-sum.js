@@ -15,7 +15,7 @@
  * @Input: [-5, 4, 6, -3, 4, -1]
  * @Output: 11
  */
-console.log("Max Sub-Array sum");
+console.log("LeetCode 53. Maximum Subarray");
 const input_array = [-5, 4, 6, -3, 4, -1];
 
 /**
