@@ -4,7 +4,8 @@
   "description": "This is a list of 60 standard DSA questions suggested by Love Babbar",
   "main": "index.js",
   "scripts": {
-    "max-subarray-sum": "nodemon ./arrays/max-subarray-sum.js"
+    "max-subarray-sum": "nodemon ./arrays/max-subarray-sum.js",
+    "buy-sell-stock": "nodemon ./arrays/buy-sell-stock.js"
   },
   "repository": {
     "type": "git",
