@@ -21,6 +21,7 @@ const input_array = [-5, 4, 6, -3, 4, -1];
 /**
  * Solution 1: Brute-Force Solution
  * Time Complexity - O(N²)
+ * Space Complexity - O(1)
  */
 
 function maxSubArraySumBruteForce(sequence) {
@@ -40,6 +41,7 @@ function maxSubArraySumBruteForce(sequence) {
 /**
  * Solution 2: Kadane's Algorithm
  * Time Complexity - O(N)
+ * Space Complexity - O(1)
  */
 
 function maxSubArraySumKadanesAlgorithm(sequence) {
