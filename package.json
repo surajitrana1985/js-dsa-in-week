@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "max-subarray-sum": "nodemon ./arrays/max-subarray-sum.js",
-    "buy-sell-stock": "nodemon ./arrays/buy-sell-stock.js"
+    "buy-sell-stock": "nodemon ./arrays/buy-sell-stock.js",
+    "buy-sell-stock-unlimited-times": "nodemon ./arrays/buy-sell-stock-unlimited-times.js"
   },
   "repository": {
     "type": "git",
