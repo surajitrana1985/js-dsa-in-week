@@ -64,3 +64,48 @@ trappedWaterArrayPreprocess = getTrappedWaterArrayPreprocessing(height);
 console.log(
 	`Example 2:  Rain water trapped by Array Preprocessing method is: ${trappedWaterArrayPreprocess}`
 );
+
+/**
+ * Solution 2: Two-Pointer Solution
+ * Time Complexity - O(N)
+ * Space Complexity - O(1)
+ * @param {*} height
+ * @returns
+ */
+function getTrappedWaterTwoPointer(height) {
+	let trapped = 0,
+		left = 0,
+		right = height.length - 1,
+		lmax = 0,
+		rmax = 0;
+	while (left <= right) {
+		if (height[left] <= height[right]) {
+			if (height[left] >= lmax) {
+				lmax = height[left];
+			} else {
+				trapped += lmax - height[left];
+			}
+			left++;
+		} else {
+			if (height[right] >= rmax) {
+				rmax = height[right];
+			} else {
+				trapped += rmax - height[right];
+			}
+			right--;
+		}
+	}
+	return trapped;
+}
+
+height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
+let trappedWaterTwoPointer = getTrappedWaterTwoPointer(height);
+console.log(
+	`Example 1:  Rain water trapped by Two-Pointer Solution method is: ${trappedWaterTwoPointer}`
+);
+
+height = [4, 2, 0, 3, 2, 5];
+trappedWaterTwoPointer = getTrappedWaterTwoPointer(height);
+console.log(
+	`Example 2:  Rain water trapped by Two-Pointer Solution method is: ${trappedWaterTwoPointer}`
+);
