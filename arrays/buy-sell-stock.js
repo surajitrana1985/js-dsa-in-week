@@ -12,7 +12,7 @@
  * Example 2: Input: prices = [7, 6, 4, 3, 1], Output: 0
  */
 
-console.log('LeetCode 121. Best Time to Buy and Sell Stock');
+console.log("LeetCode 121. Best Time to Buy and Sell Stock");
 
 /**
  * Solution 1: Brute-Force Solution
@@ -21,36 +21,36 @@ console.log('LeetCode 121. Best Time to Buy and Sell Stock');
  */
 
 function getMaxProfitBruteForce(prices) {
-  let maxProfit = 0,
-    currentProfit = 0,
-    buyPrice,
-    sellPrice
-  for (let i = 0; i < prices.length; i++) {
-    // loop for stock buy
-    buyPrice = prices[i]
-    for (let j = i; j < prices.length; j++) {
-      // loop for stock sell
-      sellPrice = prices[j]
-      currentProfit = sellPrice - buyPrice
-      if (currentProfit > maxProfit) {
-        maxProfit = currentProfit
-      }
-    }
-  }
-  return maxProfit
+	let maxProfit = 0,
+		currentProfit = 0,
+		buyPrice,
+		sellPrice;
+	for (let i = 0; i < prices.length; i++) {
+		// loop for stock buy
+		buyPrice = prices[i];
+		for (let j = i; j < prices.length; j++) {
+			// loop for stock sell
+			sellPrice = prices[j];
+			currentProfit = sellPrice - buyPrice;
+			if (currentProfit > maxProfit) {
+				maxProfit = currentProfit;
+			}
+		}
+	}
+	return maxProfit;
 }
 
-let prices = [7, 1, 5, 3, 6, 4]
-let maxProfitBruteForce = getMaxProfitBruteForce(prices)
+let prices = [7, 1, 5, 3, 6, 4];
+let maxProfitBruteForce = getMaxProfitBruteForce(prices);
 console.log(
-  `Example 1: The maximum profit by Brute-Force method is: ${maxProfitBruteForce}`,
-)
+	`Example 1: The maximum profit by Brute-Force method is: ${maxProfitBruteForce}`
+);
 
-prices = [7, 6, 4, 3, 1]
-maxProfitBruteForce = getMaxProfitBruteForce(prices)
+prices = [7, 6, 4, 3, 1];
+maxProfitBruteForce = getMaxProfitBruteForce(prices);
 console.log(
-  `Example 2: The maximum profit by Brute-Force method is: ${maxProfitBruteForce}`,
-)
+	`Example 2: The maximum profit by Brute-Force method is: ${maxProfitBruteForce}`
+);
 
 /**
  * Solution 2: Array Pre-Processing Solution
@@ -59,38 +59,38 @@ console.log(
  */
 
 function getMaxProfitArrayPreprocessing(prices) {
-  let maxProfit = 0,
-    currentProfit = 0,
-    aux_array = Array.from(prices),
-    currentMax = prices[prices.length - 1]
-  for (let i = prices.length - 1; i >= 0; i--) {
-    // loop for pre-processing array of prices
-    if (currentMax >= prices[i]) {
-      aux_array[i] = currentMax
-    } else {
-      currentMax = prices[i]
-    }
-  }
-  for (let i = 0; i < prices.length; i++) {
-    currentProfit = aux_array[i] - prices[i]
-    if (currentProfit > maxProfit) {
-      maxProfit = currentProfit
-    }
-  }
-  return maxProfit
+	let maxProfit = 0,
+		currentProfit = 0,
+		aux_array = Array.from(prices),
+		currentMax = prices[prices.length - 1];
+	for (let i = prices.length - 1; i >= 0; i--) {
+		// loop for pre-processing array of prices
+		if (currentMax >= prices[i]) {
+			aux_array[i] = currentMax;
+		} else {
+			currentMax = prices[i];
+		}
+	}
+	for (let i = 0; i < prices.length; i++) {
+		currentProfit = aux_array[i] - prices[i];
+		if (currentProfit > maxProfit) {
+			maxProfit = currentProfit;
+		}
+	}
+	return maxProfit;
 }
 
-prices = [7, 1, 5, 3, 6, 4]
-let maxProfitArrayPreprocess = getMaxProfitArrayPreprocessing(prices)
+prices = [7, 1, 5, 3, 6, 4];
+let maxProfitArrayPreprocess = getMaxProfitArrayPreprocessing(prices);
 console.log(
-  `Example 1: The maximum profit by Array Pre-Processing method is: ${maxProfitArrayPreprocess}`,
-)
+	`Example 1: The maximum profit by Array Pre-Processing method is: ${maxProfitArrayPreprocess}`
+);
 
-prices = [7, 6, 4, 3, 1]
-maxProfitArrayPreprocess = getMaxProfitArrayPreprocessing(prices)
+prices = [7, 6, 4, 3, 1];
+maxProfitArrayPreprocess = getMaxProfitArrayPreprocessing(prices);
 console.log(
-  `Example 2: The maximum profit by Array Pre-Processing method is: ${maxProfitArrayPreprocess}`,
-)
+	`Example 2: The maximum profit by Array Pre-Processing method is: ${maxProfitArrayPreprocess}`
+);
 
 /**
  * Solution 3: Two Pointer Solution
@@ -99,29 +99,29 @@ console.log(
  */
 
 function getMaxProfitPointerMethod(prices) {
-  let maxProfit = 0,
-    currentProfit = 0,
-    previousMin = prices[0]
-  for (let i = 0; i < prices.length; i++) {
-    currentProfit = prices[i] - previousMin
-    if (currentProfit > maxProfit) {
-      maxProfit = currentProfit
-    }
-    if (prices[i] < previousMin) {
-      previousMin = prices[i]
-    }
-  }
-  return maxProfit
+	let maxProfit = 0,
+		currentProfit = 0,
+		previousMin = prices[0];
+	for (let i = 0; i < prices.length; i++) {
+		currentProfit = prices[i] - previousMin;
+		if (currentProfit > maxProfit) {
+			maxProfit = currentProfit;
+		}
+		if (prices[i] < previousMin) {
+			previousMin = prices[i];
+		}
+	}
+	return maxProfit;
 }
 
-prices = [7, 1, 5, 3, 6, 4]
-let maxProfitPointer = getMaxProfitPointerMethod(prices)
+prices = [7, 1, 5, 3, 6, 4];
+let maxProfitPointer = getMaxProfitPointerMethod(prices);
 console.log(
-  `Example 1: The maximum profit by Pointer method is: ${maxProfitPointer}`,
-)
+	`Example 1: The maximum profit by Pointer method is: ${maxProfitPointer}`
+);
 
-prices = [7, 6, 4, 3, 1]
-maxProfitPointer = getMaxProfitPointerMethod(prices)
+prices = [7, 6, 4, 3, 1];
+maxProfitPointer = getMaxProfitPointerMethod(prices);
 console.log(
-  `Example 2: The maximum profit by Pointer method is: ${maxProfitPointer}`,
-)
+	`Example 2: The maximum profit by Pointer method is: ${maxProfitPointer}`
+);
