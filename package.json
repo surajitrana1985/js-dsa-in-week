@@ -10,7 +10,8 @@
     "rain-water-trapping": "nodemon ./arrays/rain-water-trapping.js",
     "spiral-matrix-traversal": "nodemon ./2D-arrays/spiral-matrix-traversal.js",
     "transpose-matrix": "nodemon ./2D-arrays/transpose-matrix.js",
-    "rotate-matrix-90deg": "nodemon ./2D-arrays/rotate-matrix-90deg.js"
+    "rotate-matrix-90deg": "nodemon ./2D-arrays/rotate-matrix-90deg.js",
+    "merge-two-sorted-arrays": "nodemon ./arrays/merge-two-sorted-arrays.js"
   },
   "repository": {
     "type": "git",
