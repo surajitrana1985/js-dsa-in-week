@@ -8,7 +8,8 @@
     "buy-sell-stock": "nodemon ./arrays/buy-sell-stock.js",
     "buy-sell-stock-unlimited-times": "nodemon ./arrays/buy-sell-stock-unlimited-times.js",
     "rain-water-trapping": "nodemon ./arrays/rain-water-trapping.js",
-    "spiral-matrix-traversal": "nodemon ./2D-arrays/spiral-matrix-traversal.js"
+    "spiral-matrix-traversal": "nodemon ./2D-arrays/spiral-matrix-traversal.js",
+    "transpose-matrix": "nodemon ./2D-arrays/transpose-matrix.js"
   },
   "repository": {
     "type": "git",
