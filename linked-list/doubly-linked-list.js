@@ -68,7 +68,7 @@ module.exports = class DoublyLinkedList {
         if (this.head === this.tail) {
             this.head = this.tail = null;
             this.size--;
-            return;
+            return deletedHead.value;
         }
         const deletedHead = this.head;
         this.head = deletedHead.next;

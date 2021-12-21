@@ -1,12 +1,13 @@
 const DoublyLinkedList = require('./doubly-linked-list');
 
 const list = new DoublyLinkedList();
-list.prepend(45);
-list.prepend(8);
-list.prepend(0);
-list.prepend(7);
-list.prepend(5);
-list.prepend(-10);
+
+const sequence = [-10, 5, 7, 0, 8, 45];
+
+sequence.forEach(item => {
+    list.prepend(item);
+});
+
 list.printList();
 
 const listSize = list.listSize();
@@ -19,15 +20,14 @@ list.deleteTail();
 list.printList();
 
 const searchedNode = list.search(7);
-console.log('Searched Node: ', searchedNode);
+console.log('Searched Node:');
+console.log(searchedNode);
 
 list.clearList();
 list.printList();
 
-list.append(-10);
-list.append(5);
-list.append(7);
-list.append(0);
-list.append(8);
-list.append(45);
+sequence.forEach(item => {
+    list.append(item);
+});
+
 list.printList();
