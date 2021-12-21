@@ -4,14 +4,14 @@
   "description": "This is a list of 60 standard DSA questions suggested by Love Babbar",
   "main": "index.js",
   "scripts": {
-    "max-subarray-sum": "nodemon ./arrays/max-subarray-sum.js",
-    "buy-sell-stock": "nodemon ./arrays/buy-sell-stock.js",
-    "buy-sell-stock-unlimited-times": "nodemon ./arrays/buy-sell-stock-unlimited-times.js",
-    "rain-water-trapping": "nodemon ./arrays/rain-water-trapping.js",
-    "spiral-matrix-traversal": "nodemon ./2D-arrays/spiral-matrix-traversal.js",
-    "transpose-matrix": "nodemon ./2D-arrays/transpose-matrix.js",
-    "rotate-matrix-90deg": "nodemon ./2D-arrays/rotate-matrix-90deg.js",
-    "merge-two-sorted-arrays": "nodemon ./arrays/merge-two-sorted-arrays.js"
+    "arrays/max-subarray-sum": "nodemon ./arrays/max-subarray-sum.js",
+    "arrays/buy-sell-stock": "nodemon ./arrays/buy-sell-stock.js",
+    "arrays/buy-sell-stock-unlimited-times": "nodemon ./arrays/buy-sell-stock-unlimited-times.js",
+    "arrays/rain-water-trapping": "nodemon ./arrays/rain-water-trapping.js",
+    "arrays/merge-two-sorted-arrays": "nodemon ./arrays/merge-two-sorted-arrays.js",
+    "matrix/spiral-matrix-traversal": "nodemon ./2D-arrays/spiral-matrix-traversal.js",
+    "matrix/transpose-matrix": "nodemon ./2D-arrays/transpose-matrix.js",
+    "matrix/rotate-matrix-90deg": "nodemon ./2D-arrays/rotate-matrix-90deg.js"
   },
   "repository": {
     "type": "git",
