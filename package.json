@@ -12,8 +12,8 @@
     "matrix/spiral-matrix-traversal": "nodemon ./2D-arrays/spiral-matrix-traversal.js",
     "matrix/transpose-matrix": "nodemon ./2D-arrays/transpose-matrix.js",
     "matrix/rotate-matrix-90deg": "nodemon ./2D-arrays/rotate-matrix-90deg.js",
-    "linkedlist/singly-linked-list-impl": "nodemon ./linked-list/singly-linked-list-impl.js",
-    "linkedlist/doubly-linked-list-impl": "nodemon ./linked-list/doubly-linked-list-impl.js",
+    "linkedlist/singly-linked-list-impl": "nodemon ./linked-list/implementation/singly-linked-list-impl.js",
+    "linkedlist/doubly-linked-list-impl": "nodemon ./linked-list/implementation/doubly-linked-list-impl.js",
     "linkedlist/middle-of-linked-list": "nodemon ./linked-list/middle-of-linked-list.js"
   },
   "repository": {

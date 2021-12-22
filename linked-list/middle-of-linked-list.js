@@ -31,7 +31,7 @@ function findMiddleOfLinkedList(list) {
     return slow;
 }
 
-const SinglyLinkedList = require("./singly-linked-list");
+const SinglyLinkedList = require("./implementation/singly-linked-list");
 const treeify = require("treeify");
 
 const list = new SinglyLinkedList();
