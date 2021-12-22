@@ -17,7 +17,8 @@
     "linkedlist/middle-of-linked-list": "nodemon ./linked-list/middle-of-linked-list.js",
     "linkedlist/reverse-linked-list-iterative": "nodemon ./linked-list/reverse-linked-list-iterative.js",
     "linkedlist/reverse-linked-list-recursive": "nodemon ./linked-list/reverse-linked-list-recursive.js",
-    "linkedlist/linked-list-cycle": "nodemon ./linked-list/linked-list-cycle.js"
+    "linkedlist/linked-list-cycle": "nodemon ./linked-list/linked-list-cycle.js",
+    "linkedlist/merge-two-sorted-linked-lists": "nodemon ./linked-list/merge-two-sorted-linked-lists.js"
   },
   "repository": {
     "type": "git",
