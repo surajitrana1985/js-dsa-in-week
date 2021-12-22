@@ -14,7 +14,8 @@
     "matrix/rotate-matrix-90deg": "nodemon ./2D-arrays/rotate-matrix-90deg.js",
     "linkedlist/singly-linked-list-impl": "nodemon ./linked-list/implementation/singly-linked-list-impl.js",
     "linkedlist/doubly-linked-list-impl": "nodemon ./linked-list/implementation/doubly-linked-list-impl.js",
-    "linkedlist/middle-of-linked-list": "nodemon ./linked-list/middle-of-linked-list.js"
+    "linkedlist/middle-of-linked-list": "nodemon ./linked-list/middle-of-linked-list.js",
+    "linkedlist/reverse-linked-list-iterative": "nodemon ./linked-list/reverse-linked-list-iterative.js"
   },
   "repository": {
     "type": "git",
